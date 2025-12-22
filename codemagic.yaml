@@ -1,14 +1,14 @@
 workflows:
   unity-build:
-    name: Unity Build - ForestArcher
+    name: Unity Build - ChickenRun
     instance_type: mac_mini_m2
     max_build_duration: 120
     environment:
-      unity: 6000.0.63f1
+      unity: 2022.3.62f1
       vars:
         BUILD_PLATFORM: android
       groups:
-        - unity_credentials 
+        - unity_credentials # UNITY_SERIAL, UNITY_EMAIL, UNITY_PASSWORD, CM_KEY_ALIAS, CM_KEYSTORE_PASSWORD, CM_KEY_PASSWORD, CM_KEYSTORE_BASE64
     scripts:
       - name: Activate Unity license
         script: |
@@ -23,8 +23,8 @@ workflows:
       - name: Prepare Android keystore
         script: |
           echo "Decoding Android keystore..."
-          echo $CM_KEYSTORE_BASE64 | base64 --decode > ForestArcher.keystore
-          export ANDROID_KEYSTORE_PATH=ForestArcher.keystore
+          echo $CM_KEYSTORE_BASE64 | base64 --decode > chickenkfc.keystore
+          export ANDROID_KEYSTORE_PATH=chickenkfc.keystore
           export ANDROID_KEYSTORE_PASSWORD=$CM_KEYSTORE_PASSWORD
           export ANDROID_KEY_ALIAS=$CM_KEY_ALIAS
           export ANDROID_KEY_PASSWORD=$CM_KEY_PASSWORD
@@ -39,14 +39,17 @@ workflows:
             -projectPath . \
             -executeMethod BuildScript.PerformBuild \
             -nographics
+
       - name: Return (deactivate) Unity license
         script: |
           echo "Returning Unity license..."
           "$UNITY_HOME/Contents/MacOS/Unity" \
           -batchmode -quit -returnLicense || true
 
+
     artifacts:
       - ForestArcher.aab
       - ForestArcher.apk
       - unity_build.log
       - unity_license.log
+      - unity_return_license.log 

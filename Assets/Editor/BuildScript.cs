@@ -19,8 +19,8 @@ public class BuildScript
         // ========================
         // Пути к файлам сборки
         // ========================
-        string aabPath = "IceFishing.aab";
-        string apkPath = "IceFishing.apk";
+        string aabPath = "ForestArcher.aab";
+        string apkPath = "ForestArcher.apk";
 
         // ========================
         // Настройка Android Signing через переменные окружения

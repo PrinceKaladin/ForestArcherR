@@ -1,0 +1,8 @@
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/CMakeFiles/edit_cache.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/CMakeFiles/rebuild_cache.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/GameActivity/CMakeFiles/game.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+A:/Unity/Project Unity/Freelance/Forest Archer/.utmp/RelWithDebInfo/4z3w572c/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

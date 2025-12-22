@@ -1,0 +1,23 @@
+# ninja log v5
+375	10527	7880164294845816	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d8178cc7d031498
+407	938	7880164198966052	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c1a82a7a01075ab5
+938	1504	7880164204659281	A:/Unity/Project Unity/Freelance/Forest Archer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4z3w572c/obj/arm64-v8a/libswappywrapper.so	5c7400312e107fd7
+34	10080	7880164290347581	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	b1aebe24a5f5437
+386	10035	7880164289882429	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	406a70f9700ae7ce
+381	10112	7880164290654215	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	32589996079e08e0
+402	10546	7880164295050227	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	52b3d9660cf79eac
+396	10121	7880164290754323	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	afe335ac01c11096
+10546	10963	7880164299250218	A:/Unity/Project Unity/Freelance/Forest Archer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4z3w572c/obj/arm64-v8a/libgame.so	fdd2edd9fa887590
+370	10161	7880164291149371	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a6429542368def13
+391	10424	7880164293817542	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	6baf15b9579596a
+516	1053	7880575309128302	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	c1a82a7a01075ab5
+1054	1274	7880575311311355	A:/Unity/Project Unity/Freelance/Forest Archer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4z3w572c/obj/arm64-v8a/libswappywrapper.so	5c7400312e107fd7
+411	10821	7880575406686591	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	406a70f9700ae7ce
+441	10824	7880575406686591	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	b1aebe24a5f5437
+397	10866	7880575407151939	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	32589996079e08e0
+495	10893	7880575407434938	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	afe335ac01c11096
+389	10956	7880575408037801	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a6429542368def13
+486	11167	7880575410209284	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	6baf15b9579596a
+22	11259	7880575411117156	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d8178cc7d031498
+505	11374	7880575412271293	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	52b3d9660cf79eac
+11375	11671	7880575415266223	A:/Unity/Project Unity/Freelance/Forest Archer/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4z3w572c/obj/arm64-v8a/libgame.so	fdd2edd9fa887590

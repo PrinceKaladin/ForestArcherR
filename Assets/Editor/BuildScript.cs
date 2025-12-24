@@ -1,4 +1,4 @@
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 using System;
@@ -19,8 +19,8 @@ public class BuildScript
         // ========================
         // Пути к файлам сборки
         // ========================
-        string aabPath = "ForestArcher.aab";
-        string apkPath = "ForestArcher.apk";
+        string aabPath = "ArcherMaster.aab";
+        string apkPath = "ArcherMaster.apk";
 
         // ========================
         // Настройка Android Signing через переменные окружения
@@ -33,25 +33,25 @@ public class BuildScript
         string tempKeystorePath = null;
 
         if (!string.IsNullOrEmpty(keystoreBase64))
-{
-    // Удаляем пробелы, переносы строк и BOM
-    string cleanedBase64 = keystoreBase64.Trim()
-                                         .Replace("\r", "")
-                                         .Replace("\n", "")
-                                         .Trim('\uFEFF');
+        {
+            // Удаляем пробелы, переносы строк и BOM
+            string cleanedBase64 = keystoreBase64.Trim()
+                                                 .Replace("\r", "")
+                                                 .Replace("\n", "")
+                                                 .Trim('\uFEFF');
 
-    // Создаем временный файл keystore
-    tempKeystorePath = Path.Combine(Path.GetTempPath(), "TempKeystore.jks");
-    File.WriteAllBytes(tempKeystorePath, Convert.FromBase64String(cleanedBase64));
+            // Создаем временный файл keystore
+            tempKeystorePath = Path.Combine(Path.GetTempPath(), "TempKeystore.jks");
+            File.WriteAllBytes(tempKeystorePath, Convert.FromBase64String(cleanedBase64));
 
-    PlayerSettings.Android.useCustomKeystore = true;
-    PlayerSettings.Android.keystoreName = tempKeystorePath;
-    PlayerSettings.Android.keystorePass = keystorePass;
-    PlayerSettings.Android.keyaliasName = keyAlias;
-    PlayerSettings.Android.keyaliasPass = keyPass;
+            PlayerSettings.Android.useCustomKeystore = true;
+            PlayerSettings.Android.keystoreName = tempKeystorePath;
+            PlayerSettings.Android.keystorePass = keystorePass;
+            PlayerSettings.Android.keyaliasName = keyAlias;
+            PlayerSettings.Android.keyaliasPass = keyPass;
 
-    Debug.Log("Android signing configured from Base64 keystore.");
-}
+            Debug.Log("Android signing configured from Base64 keystore.");
+        }
         else
         {
             Debug.LogWarning("Keystore Base64 not set. APK/AAB will be unsigned.");
